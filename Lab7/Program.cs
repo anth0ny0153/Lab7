@@ -51,7 +51,7 @@ namespace Lab7
         }
         public static bool ValidatePhoneNumber()
         {
-            Console.Write("Please enter a valid phone number: ");
+            Console.Write("Please enter a valid phone number(###.###.####): ");
             string phoneNumber = Console.ReadLine();
             if (!Regex.IsMatch(phoneNumber, @"^\d{3}-\d{3}-\d{4}$"))
             {
@@ -67,7 +67,7 @@ namespace Lab7
         }
         public static bool ValidateDate()
         {
-            Console.Write("Please enter a valid date: ");
+            Console.Write("Please enter a valid date(03/20/2000: ");
             string date = Console.ReadLine();
             if (!Regex.IsMatch(date, @"^\d{2}/\d{2}/\d{4}$"))
             {
